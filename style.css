@@ -1,0 +1,105 @@
+@import url(https://fonts.bunny.net/css?family=figtree:500,800);
+
+:root {
+  --clr-primary-400: #f4d04e;
+
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-500: #6b6b6b;
+  --clr-neutral-800: #111111;
+  --clr-neutral-900: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--clr-primary-400);
+  font-family: "Figtree", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text-1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.text-2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.text-3 {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.text-3b {
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+.card {
+  background-color: var(--clr-neutral-100);
+  box-shadow: 8px 8px 0px 0px var(--clr-neutral-900);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--clr-neutral-800);
+  width: min(384px, 100vw - 24px);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.category {
+  background-color: var(--clr-primary-400);
+  width: fit-content;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.description {
+  color: var(--clr-neutral-500);
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card__author img {
+  width: 32px;
+  height: 32px;
+}
+
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--clr-neutral-900);
+}
